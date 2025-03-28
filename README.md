@@ -29,5 +29,5 @@ The project was created to improve HTML and CSS layout skills by accurately repl
 
    Open the file in your preferred browser to view the project.
 
-##Preview
+## Preview
 ![googlePreview](https://github.com/user-attachments/assets/7b4e1ac6-55ab-4deb-9e14-dcf3fcdcbb5f)
