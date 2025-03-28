@@ -25,7 +25,7 @@ The project was created to improve HTML and CSS layout skills by accurately repl
    ```bash
    git clone https://github.com/EdivanSteri/google-homepage-replica.git
 
-2. **Open the index.html file:
+2. **Open the index.html file:**
 
    Open the file in your preferred browser to view the project.
 
