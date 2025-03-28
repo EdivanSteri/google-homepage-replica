@@ -1,0 +1,243 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+  10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+  Default: 400
+  Medium: 500
+  Semi-bold: 600
+  Bold: 700
+
+- Line heights
+  Default: 1
+  Small: 1.05
+  Medium: 1.2
+  Paragraph default: 1.6
+  Large: 1.8
+
+- Letter spacing
+  -0.5px
+  0.75px
+
+--- 02 COLORS
+
+  - Primary: #202124
+
+
+--- 05 SHADOWS
+
+  0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+  Default: 9px
+  Medium: 11px
+
+- Spacing system (px)
+  2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #101218;
+  font-size: 62.5%;
+
+  font-family: sans-serif;
+
+  position: relative;
+}
+
+
+/* SECTION HEADER */
+.section-header {
+  color: #fff;
+  font-size: 0.85rem;
+  line-height: 0.8;
+  font-weight: 50;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.7rem 1.6rem;
+  margin-bottom: 12.8rem;
+}
+
+.nav-list-left,
+.nav-list-right {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  transition: all 0.3s;
+}
+
+.nav-list-left li:hover,
+.nav-list-right li:first-child:hover,
+.nav-list-right li:nth-child(2):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon-wrapper-circle,
+.img-wrapper-circle {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  transition: all 0.3s;
+}
+
+.nav-right-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+
+  stroke: #fff;
+}
+
+img.user-profile-image {
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  background-size: cover;
+
+  object-fit: cover;
+}
+
+.icon-wrapper-circle:hover,
+.img-wrapper-circle:hover {
+  cursor: pointer;
+  background-color: #1F2126;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+/* Google Input */
+.form-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+label {
+  font-size: 6.2rem;
+}
+
+input {
+  height: 3.2rem;
+  width: 100%;
+  background-color: #3F4454;
+  color: white;
+  width: 35rem;
+  padding: 1.2rem 2.4rem 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 100;
+
+  border: none;
+  border-radius: 50px;
+}
+
+input.input-search:focus {
+  outline: none;
+}
+
+input:hover {
+  background-color: #4D5160;
+}
+
+/*Buttons below Google Input*/
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3F4454;
+
+  font-size: 1rem;
+  padding: 0.8rem;
+
+  transition: all 0.3s;
+}
+
+.btn:active,
+.btn:hover {
+  box-shadow: 0 0 0 0.05rem rgba(255, 255, 255, 0.5);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 100;
+
+  color: #fff;
+  background-color: #1F2128;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer .first,
+.footer .last {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1.2rem 2.4rem;
+}
+
+.footer .last {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.items li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
